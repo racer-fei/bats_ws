@@ -24,7 +24,7 @@ async def commandList(command):
     elif command == 'C':
         closeBack()
     else:
-        stop_all()
+        stopMovement()
 
 def turnLeft():
     MOTOR_LEFT_PIN1.value(0)
@@ -56,7 +56,7 @@ def openBack():
 def closeBack():
     BACK_MOTOR_PIN.value(0)
 
-def stop_all():
+def stopMovement():
     MOTOR_LEFT_PIN1.value(0)
     MOTOR_LEFT_PIN2.value(0)
     MOTOR_RIGHT_PIN1.value(0)
